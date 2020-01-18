@@ -1,0 +1,22 @@
+{
+  "name": "mern-blog-aws",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node localServer.js",
+    "deploy": "serverless deploy"
+  },
+  "keywords": [],
+  "author": "Sufan Huang",
+  "license": "ISC",
+  "dependencies": {
+    "await-to-js": "^2.1.1",
+    "aws-serverless-express": "^3.3.6",
+    "express": "^4.17.1",
+    "mongoose": "^5.8.9"
+  },
+  "devDependencies": {
+    "serverless": "^1.50.1"
+  }
+}

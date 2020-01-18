@@ -1,0 +1,13 @@
+service: mern-blog-aws
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+
+functions:
+  api:
+    handler: lambda.handler
+    events:
+      - http: ANY {proxy+}
+      - http: ANY /
+
