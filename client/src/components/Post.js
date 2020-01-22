@@ -16,7 +16,6 @@ export default class Post extends Component{
     }
     componentDidMount =async()=>{
         const  {_id}  = this.props.match.params
-        console.log(_id)
         let [ error, result ] = await to (axios.get(`/posts/${_id}`))
         console.log(result.data)
         let post = result.data
@@ -27,14 +26,12 @@ export default class Post extends Component{
     }
 
     deletePost = async()=>{
-        const  {_id}  = this.props.match.params._id
+        const  {_id}  = this.props.match.params
         let [ error ] = await to (axios.delete(`/posts/${_id}`))
-
-
         if(error){
             console.log('deleteItem has error',error)
         }
-        //return this.props.history.push("/posts")
+        return this.props.history.push("/posts")
     }
     changePage =()=>{
         this.props.history.push("/posts")
