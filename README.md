@@ -11,7 +11,7 @@ npm start
 * lambda.js - File which is called by AWS lambda
 * localServer.js - Run the app on localhost
 * src/app.js - Your App logic
-* serverless.yml - Lambda function configration 
+* serverless.yml - Lambda function configuration 
 
 #### Deployment
 Run the following command to deploy the app as AWS Lambda function
